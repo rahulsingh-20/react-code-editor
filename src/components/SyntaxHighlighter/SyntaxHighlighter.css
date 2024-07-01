@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+}
+
+textarea {
+  line-height: 20px;
+  width: 100%;
+  height: 200px;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent; /* Make text invisible*/
+  background-color: transparent; /* Make background transparent*/
+  caret-color: black; /* Keep caret visible*/
+  z-index: 1; /* Ensure textarea is above the div*/
+  overflow: auto; /* Enable scrolling*/
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.highlight {
+  line-height: 20px;
+  width: 100%;
+  height: 200px;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  pointer-events: none; /* Make div non-interactive*/
+  z-index: 0; /* Ensure div is below the textarea*/
+  overflow: hidden; /* Hide scrollbars in the highlight div*/
+}
