@@ -27,8 +27,7 @@ textarea {
   caret-color: black; /* Keep caret visible*/
   z-index: 1; /* Ensure textarea is above the div*/
   overflow: auto; /* Enable scrolling*/
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  white-space: pre;
 }
 
 .highlight {
@@ -39,8 +38,7 @@ textarea {
   font-size: 16px;
   padding: 10px;
   box-sizing: border-box;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  white-space: pre;
   pointer-events: none; /* Make div non-interactive*/
   z-index: 0; /* Ensure div is below the textarea*/
   overflow: hidden; /* Hide scrollbars in the highlight div*/
